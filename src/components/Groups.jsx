@@ -5,7 +5,6 @@
 * <Groups/>
 */
 import styled from 'styled-components';
-// import PropTypes from 'prop-types';
 // import { Link, Switch, Route } from 'react-router-dom';
 
 function Groups(){
@@ -30,5 +29,3 @@ font-family: sans-serif;
 padding-top: 50px;
 color: white;
 `;
-
-

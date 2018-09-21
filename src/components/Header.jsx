@@ -14,6 +14,10 @@ function Header(){
       <Link to="/">Home</Link>
       <span> | </span>
       <Link to="/login">Login</Link>
+      <span> | </span>
+      <Link to="/contacts">Contacts</Link>
+      <span> | </span>
+      <Link to="/groups">Groups</Link>
     </Main>
   );
 }

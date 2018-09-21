@@ -9,15 +9,19 @@ import { Switch, Route } from 'react-router-dom';
 import ERROR404 from './ERROR404';
 import Header from './Header';
 import Login from './Login';
+import Contacts from './Contacts';
+import Groups from './Groups';
 
 function App(){
   return (
-    <Main>
+    <Main className="container-fluid">
+      <h1 className="jumbotron">Welcome to Groups</h1>
       <Header/>
-      <h1>App Component Created Successfully</h1>
       <Switch>
         <Route exact path='/'/>
         <Route exact path='/login' component={Login}/>
+        <Route exact path='/contacts' component={Contacts}/>
+        <Route exact path='/groups' component={Groups}/>
         <Route component={ERROR404} />
       </Switch>
     </Main>
@@ -36,5 +40,5 @@ const Main = styled.div`
 background-color: black;
 font-family: sans-serif;
 padding-top: 50px;
-color: white;
+color: black;
 `;
