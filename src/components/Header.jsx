@@ -6,12 +6,12 @@
 */
 import styled from 'styled-components';
 // import PropTypes from 'prop-types';
-// import { Link, Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header(){
   return (
     <Main>
-      <h1>Header Component Created Successfully</h1>
+      <Link to="/">Home</Link>
     </Main>
   );
 }
@@ -30,5 +30,3 @@ font-family: sans-serif;
 padding-top: 50px;
 color: white;
 `;
-
-

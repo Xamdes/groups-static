@@ -5,13 +5,19 @@
 * <App/>
 */
 import styled from 'styled-components';
-// import PropTypes from 'prop-types';
-// import { Link, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
+import ERROR404 from './ERROR404';
+import Header from './Header';
 
 function App(){
   return (
     <Main>
+      <Header/>
       <h1>App Component Created Successfully</h1>
+      <Switch>
+        <Route exact path='/'/>
+        <Route component={ERROR404} />
+      </Switch>
     </Main>
   );
 }
@@ -30,5 +36,3 @@ font-family: sans-serif;
 padding-top: 50px;
 color: white;
 `;
-
-
