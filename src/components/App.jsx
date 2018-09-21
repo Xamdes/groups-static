@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 import ERROR404 from './ERROR404';
 import Header from './Header';
+import Login from './Login';
 
 function App(){
   return (
@@ -16,6 +17,7 @@ function App(){
       <h1>App Component Created Successfully</h1>
       <Switch>
         <Route exact path='/'/>
+        <Route exact path='/login' component={Login}/>
         <Route component={ERROR404} />
       </Switch>
     </Main>

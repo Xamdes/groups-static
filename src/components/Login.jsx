@@ -5,13 +5,12 @@
 * <Login/>
 */
 import styled from 'styled-components';
-// import PropTypes from 'prop-types';
 // import { Link, Switch, Route } from 'react-router-dom';
 
 function Login(){
   return (
     <Main>
-      <h1>Login Component Created Successfully</h1>
+      <h1>User Login</h1>
     </Main>
   );
 }
@@ -30,5 +29,3 @@ font-family: sans-serif;
 padding-top: 50px;
 color: white;
 `;
-
-

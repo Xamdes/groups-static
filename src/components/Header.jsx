@@ -12,6 +12,8 @@ function Header(){
   return (
     <Main>
       <Link to="/">Home</Link>
+      <span> | </span>
+      <Link to="/login">Login</Link>
     </Main>
   );
 }
