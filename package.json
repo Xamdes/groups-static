@@ -16,7 +16,7 @@
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server"
   },
-  "author": "Jane Doe",
+  "author": "Steven Colburn",
   "license": "MIT",
   "dependencies": {
     "ajv": "^6.5.3",

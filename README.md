@@ -2,7 +2,7 @@
 
 ## Author(s)
 
-  * Jane Doe
+  * Steven Colburn
 
 ## Install
 
@@ -45,6 +45,3 @@
 **React Project Created using @xamdes/project-generator**
 **Used Command: npx -p @xamdes/project-generator -c 'create-react-[mac/win] groups-static'**
 **Latest Project Generator Notes can be found at https://www.npmjs.com/package/@xamdes/project-generator**
-
-
-
