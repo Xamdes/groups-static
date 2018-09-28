@@ -11,7 +11,7 @@ import styled from 'styled-components';
 function Group(props){
   return (
     <Main>
-      <h5>{props.groupName}</h5>
+      <Name>{props.groupName}</Name>
       <p>Id: {props.id}</p>
     </Main>
   );
@@ -27,4 +27,11 @@ export default Group;
 
 const Main = styled.div`
 
+`;
+
+const Name = styled.h4`
+background-color: grey;
+&:hover ${Name} {
+  background-color: blue;
+}
 `;
