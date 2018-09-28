@@ -8,27 +8,22 @@ import styled from 'styled-components';
 // import PropTypes from 'prop-types';
 // import { Link, Switch, Route } from 'react-router-dom';
 
-function Message(){
+function Message(props){
   return (
     <Main>
-      <h1>Message Component Created Successfully</h1>
+      <p>{props.message}</p>
     </Main>
   );
 }
 
-/*
+
 Message.propTypes = {
-  //  [variable-name]: PropTypes.[type],
+  Message: PropTypes.string,
 };
-*/
+
 
 export default Message;
 
 const Main = styled.div`
-background-color: black;
-font-family: sans-serif;
-padding-top: 50px;
-color: white;
+
 `;
-
-

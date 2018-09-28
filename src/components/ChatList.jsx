@@ -15,7 +15,9 @@ function ChatList(){
   return (
     <Main>
       <h1>Current Discussions</h1>
+      <h2>Chat List One</h2>
       <Chat messageList={chatOne}/>
+      <h2>Chat List Two</h2>
       <Chat messageList={chatTwo}/>
     </Main>
   );
@@ -32,7 +34,6 @@ export default ChatList;
 const Main = styled.div`
 background-color: black;
 font-family: sans-serif;
-padding-top: 50px;
 color: white;
 `;
 

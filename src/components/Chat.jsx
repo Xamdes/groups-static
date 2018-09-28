@@ -5,6 +5,7 @@
 * <Chat/>
 */
 import styled from 'styled-components';
+import Message from './Message'
 // import PropTypes from 'prop-types';
 // import { Link, Switch, Route } from 'react-router-dom';
 
@@ -16,7 +17,7 @@ function Chat(props){
 
   return (
     <Main>
-      {props.messageList.map((message) =>
+      {props.messageList.map((message,i) =>
         <Message message={message}
           key={i}/>
       )}
@@ -28,15 +29,12 @@ function Chat(props){
 
 
 Chat.propTypes = {
-  messages: PropTypes.array,
+  messageList: PropTypes.array,
 };
 
 
 export default Chat;
 
 const Main = styled.div`
-background-color: black;
-font-family: sans-serif;
-padding-top: 50px;
-color: white;
+
 `;

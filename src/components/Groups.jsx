@@ -8,15 +8,16 @@ import styled from 'styled-components';
 import ChatList from './ChatList';
 // import { Link, Switch, Route } from 'react-router-dom';
 
-//Right side should contain current joing group Discussions
-// Details Groups name and a Public/Private descriptdor
+//Right side should contain list of groups to select from
+//Details Groups name and a Public/Private descriptdor
 
 function Groups(){
   return (
     <Main>
       <h1>Groups</h1>
       <div className="row">
-        <div className="col-md-3"><ChatList/></div>
+        <div className="col-md-3"></div>
+        <div className="col-md-9"><ChatList/></div>
       </div>
     </Main>
   );
