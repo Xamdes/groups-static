@@ -27,8 +27,5 @@ export default Contacts;
 const Main = styled.div`
 background-color: black;
 font-family: sans-serif;
-padding-top: 50px;
 color: white;
 `;
-
-
