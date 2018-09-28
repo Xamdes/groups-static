@@ -19,8 +19,10 @@ function Groups(){
       <div className="row">
         <div className="col-md-3">
           {groupList.map((group,i) =>
-            <Group group={group}
-              key={i}/>
+            <Group
+              groupName={group.groupName}
+              id={group.id}
+              key={group.id}/>
           )}
         </div>
         <div className="col-md-9"><ChatList/></div>
@@ -48,4 +50,7 @@ const Title = styled.h1`
 text-align: center;
 `;
 
-const groupList = ['sudo masters','react help group'];
+const groupOne = { groupName:'sudo masters', id:'0' };
+const groupTwo = { groupName:'react help group', id:'1' };
+
+const groupList = [groupOne,groupTwo];

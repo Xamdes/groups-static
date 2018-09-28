@@ -11,7 +11,8 @@ import styled from 'styled-components';
 function Group(props){
   return (
     <Main>
-      <h5>{props.group}</h5>
+      <h5>{props.groupName}</h5>
+      <p>Id: {props.id}</p>
     </Main>
   );
 }

@@ -11,11 +11,6 @@ import { v4 } from 'uuid';
 
 function MessageForm(){
 
-  function handleSubmitMessage()
-  {
-    console.log('Test Message Submit');
-  }
-
   let _message;
   _message = null;
   function handleNewMessageFormSubmission(event)
