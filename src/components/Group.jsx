@@ -8,10 +8,18 @@ import styled from 'styled-components';
 // import PropTypes from 'prop-types';
 // import { Link, Switch, Route } from 'react-router-dom';
 
+
 function Group(props){
+
+  function handleDisplayGroupSelected()
+  {
+    console.log(props.groupName+'was selected with Id: '+props.id);
+  }
+
+
   return (
     <Main>
-      <Name>{props.groupName}</Name>
+      <Name onClick={handleDisplayGroupSelected}>{props.groupName}</Name>
       <p>Id: {props.id}</p>
     </Main>
   );
