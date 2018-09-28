@@ -8,6 +8,9 @@ import styled from 'styled-components';
 import ChatList from './ChatList';
 // import { Link, Switch, Route } from 'react-router-dom';
 
+//Right side should contain current joing group Discussions
+// Details Groups name and a Public/Private descriptor
+
 function Groups(){
   return (
     <Main>

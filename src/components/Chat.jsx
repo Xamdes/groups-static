@@ -8,6 +8,8 @@ import styled from 'styled-components';
 // import PropTypes from 'prop-types';
 // import { Link, Switch, Route } from 'react-router-dom';
 
+//Contains current dicusion for selected group
+
 function Chat(){
   return (
     <Main>
@@ -30,5 +32,3 @@ font-family: sans-serif;
 padding-top: 50px;
 color: white;
 `;
-
-

@@ -9,6 +9,8 @@ import Chat from './Chat';
 // import PropTypes from 'prop-types';
 // import { Link, Switch, Route } from 'react-router-dom';
 
+//List chats by chat names pass name and uuid
+
 function ChatList(){
   return (
     <Main>
