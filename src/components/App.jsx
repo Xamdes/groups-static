@@ -12,20 +12,30 @@ import Login from './Login';
 import Contacts from './Contacts';
 import Groups from './Groups';
 
-function App(){
-  return (
-    <Main className="container-fluid">
-      <h1 className="jumbotron">Welcome to Groups</h1>
-      <Header/>
-      <Switch>
-        <Route exact path='/'/>
-        <Route exact path='/login' component={Login}/>
-        <Route exact path='/contacts' component={Contacts}/>
-        <Route exact path='/groups' component={Groups}/>
-        <Route component={ERROR404} />
-      </Switch>
-    </Main>
-  );
+class App extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      masterChatList: []
+    };
+    // this.handleAddingNewTicketToList = this.handleAddingNewTicketToList.bind(this);
+}
+
+  render(){
+    return (
+      <Main className="container-fluid">
+        <h1 className="jumbotron">Welcome to Groups</h1>
+        <Header/>
+        <Switch>
+          <Route exact path='/'/>
+          <Route exact path='/login' component={Login}/>
+          <Route exact path='/contacts' component={Contacts}/>
+          <Route exact path='/groups' render={()=><Groups/>}/>
+          <Route component={ERROR404} />
+        </Switch>
+      </Main>
+    );
+  }
 }
 
 /*
