@@ -6,7 +6,7 @@
 */
 import styled from 'styled-components';
 import Message from './Message';
-// import PropTypes from 'prop-types';
+import MessageForm from './MessageForm';
 // import { Link, Switch, Route } from 'react-router-dom';
 
 //Contains current dicusion for selected group
@@ -19,25 +19,16 @@ function Chat(props){
         <Message message={message}
           key={i}/>
       )}
-      <div className='row'>
-        <div classname='col-md-9'>
-          <textarea placeholder='Message Box' cols='100'></textarea>
-        </div>
-        <div classname='col-md-3'>
-          <button className='btn btn-submit'>Submit</button>
-        </div>
-      </div>
+      <MessageForm/>
     </Main>
   );
 
 
 }
 
-
 Chat.propTypes = {
   messageList: PropTypes.array,
 };
-
 
 export default Chat;
 
