@@ -24,8 +24,8 @@ class App extends React.Component{
   render(){
     return (
       <Main className="container-fluid">
+        <HeaderStyle><Header/></HeaderStyle>
         <Title className="jumbotron">Welcome to Groups</Title>
-        <Header/>
         <Switch>
           <Route exact path='/'/>
           <Route exact path='/login' component={Login}/>
@@ -54,5 +54,10 @@ color: black;
 `;
 
 const Title = styled.h1`
+text-align: center;
+`;
+
+const HeaderStyle = styled.div`
+font-size: 1.2em;
 text-align: center;
 `;

@@ -5,7 +5,6 @@
 * <Header/>
 */
 import styled from 'styled-components';
-// import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 function Header(){
@@ -22,16 +21,10 @@ function Header(){
   );
 }
 
-/*
-Header.propTypes = {
-  //  [variable-name]: PropTypes.[type],
-};
-*/
-
 export default Header;
 
 const Main = styled.div`
 background-color: black;
 font-family: sans-serif;
-color: white;
+color: grey;
 `;
