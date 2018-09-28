@@ -18,7 +18,7 @@ function Groups(){
       <Title>Group [current group selected]</Title>
       <div className="row">
         <div className="col-md-3">
-          {groupList.map((group,i) =>
+          {groupList.map((group) =>
             <Group
               groupName={group.groupName}
               id={group.id}

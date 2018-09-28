@@ -5,7 +5,7 @@
 * <MessageForm/>
 */
 import styled from 'styled-components';
-import { v4 } from 'uuid';
+// import { v4 } from 'uuid';
 // import PropTypes from 'prop-types';
 // import { Link, Switch, Route } from 'react-router-dom';
 
@@ -24,10 +24,9 @@ function MessageForm(){
   return (
     <Main>
       <form className="row" onSubmit={handleNewMessageFormSubmission}>
-        <textarea placeholder='Message Box'
+        <textarea placeholder='New Message'
           className="col-md-9"
           id='issue'
-          placeholder='New Message'
           ref={(textarea) => {_message = textarea;}}/>
         <div className='col-md-3'>
           <button className='btn btn-submit' type="submit">Submit</button>

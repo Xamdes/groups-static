@@ -25,11 +25,12 @@ function Group(props){
   );
 }
 
-/*
+
 Group.propTypes = {
-  //  [variable-name]: PropTypes.[type],
+  groupName: PropTypes.string,
+  id: PropTypes.string,
 };
-*/
+
 
 export default Group;
 
