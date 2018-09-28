@@ -22,7 +22,7 @@ function MessageForm(){
   {
     event.preventDefault();
     // props.onNewMessageCreation({message: _message.value, , id: v4()});
-    console.log(_message);
+    console.log(_message.value);
     _message.value = '';
   }
 

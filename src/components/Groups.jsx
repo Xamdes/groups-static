@@ -6,6 +6,7 @@
 */
 import styled from 'styled-components';
 import ChatList from './ChatList';
+import Group from './Group';
 // import { Link, Switch, Route } from 'react-router-dom';
 
 //Right side should contain list of groups to select from
@@ -16,7 +17,12 @@ function Groups(){
     <Main>
       <Title>Group [current group selected]</Title>
       <div className="row">
-        <div className="col-md-3"></div>
+        <div className="col-md-3">
+          {groupList.map((group,i) =>
+            <Group group={group}
+              key={i}/>
+          )}
+        </div>
         <div className="col-md-9"><ChatList/></div>
       </div>
     </Main>
@@ -41,3 +47,5 @@ color: white;
 const Title = styled.h1`
 text-align: center;
 `;
+
+const groupList = ['sudo masters','react help group'];
