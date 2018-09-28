@@ -19,7 +19,7 @@ class App extends React.Component{
       masterChatList: []
     };
     // this.handleAddingNewTicketToList = this.handleAddingNewTicketToList.bind(this);
-}
+  }
 
   render(){
     return (
