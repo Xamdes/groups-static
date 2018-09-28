@@ -18,7 +18,14 @@ class App extends React.Component{
     this.state = {
       // masterChatList: []
     };
-    // this.handleAddingNewTicketToList = this.handleAddingNewTicketToList.bind(this);
+    this.handleUserLogin = this.handleUserLogin.bind(this);
+  }
+
+  handleUserLogin(username,password)
+  {
+    console.log('User has Logged in');
+    console.log(username);
+    console.log(password);
   }
 
   render(){
@@ -28,8 +35,8 @@ class App extends React.Component{
         <Title className="jumbotron">Welcome to Groups</Title>
         <Switch>
           <Route exact path='/'/>
-          <Route exact path='/login' component={Login}/>
-          <Route exact path='/contacts' component={Contacts}/>
+          <Route exact path='/login' render={()=><Login onUserLogin={this.handleUserLogin}/>}/>
+          <Route exact path='/contacts' render={()=><Contacts/>}/>
           <Route exact path='/groups' render={()=><Groups/>}/>
           <Route component={Error404} />
         </Switch>
@@ -51,6 +58,7 @@ background-color: black;
 font-family: sans-serif;
 padding-top: 50px;
 color: black;
+font-size: 1em;
 `;
 
 const Title = styled.h1`

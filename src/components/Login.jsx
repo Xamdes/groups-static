@@ -7,7 +7,7 @@
 import styled from 'styled-components';
 // import { Link, Switch, Route } from 'react-router-dom';
 
-function Login()
+function Login(props)
 {
   let _username, _password;
   _username = _password = null;
@@ -15,8 +15,7 @@ function Login()
   {
     event.preventDefault();
     // props.onNewTicketCreation({username: _username.value, password: _password.value});
-    console.log(_username.value);
-    console.log(_password.value);
+    props.onUserLogin(_username.value,_password.value);
     _username.value = '';
     _password.value = '';
   }
@@ -42,11 +41,11 @@ function Login()
   );
 }
 
-/*
+
 Login.propTypes = {
-  //  [variable-name]: PropTypes.[type],
+  onUserLogin: PropTypes.func,
 };
-*/
+
 
 export default Login;
 

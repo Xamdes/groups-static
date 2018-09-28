@@ -25,4 +25,5 @@ export default Error404;
 const Main = styled.div`
 color: white;
 text-align: center;
+font-size: 1em;
 `;
