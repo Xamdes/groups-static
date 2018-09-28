@@ -6,7 +6,7 @@
 */
 import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
-import ERROR404 from './ERROR404';
+import Error404 from './Error404';
 import Header from './Header';
 import Login from './Login';
 import Contacts from './Contacts';
@@ -31,7 +31,7 @@ class App extends React.Component{
           <Route exact path='/login' component={Login}/>
           <Route exact path='/contacts' component={Contacts}/>
           <Route exact path='/groups' render={()=><Groups/>}/>
-          <Route component={ERROR404} />
+          <Route component={Error404} />
         </Switch>
       </Main>
     );
