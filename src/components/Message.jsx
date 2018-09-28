@@ -18,7 +18,7 @@ function Message(props){
 
 
 Message.propTypes = {
-  Message: PropTypes.string,
+  message: PropTypes.string,
 };
 
 

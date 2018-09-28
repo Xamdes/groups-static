@@ -24,7 +24,7 @@ class App extends React.Component{
   render(){
     return (
       <Main className="container-fluid">
-        <h1 className="jumbotron">Welcome to Groups</h1>
+        <Title className="jumbotron">Welcome to Groups</Title>
         <Header/>
         <Switch>
           <Route exact path='/'/>
@@ -51,4 +51,8 @@ background-color: black;
 font-family: sans-serif;
 padding-top: 50px;
 color: black;
+`;
+
+const Title = styled.h1`
+text-align: center;
 `;

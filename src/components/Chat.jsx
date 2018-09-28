@@ -5,13 +5,11 @@
 * <Chat/>
 */
 import styled from 'styled-components';
-import Message from './Message'
+import Message from './Message';
 // import PropTypes from 'prop-types';
 // import { Link, Switch, Route } from 'react-router-dom';
 
 //Contains current dicusion for selected group
-
-
 
 function Chat(props){
 

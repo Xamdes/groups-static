@@ -14,7 +14,7 @@ import ChatList from './ChatList';
 function Groups(){
   return (
     <Main>
-      <h1>Groups</h1>
+      <Title>Group [current group selected]</Title>
       <div className="row">
         <div className="col-md-3"></div>
         <div className="col-md-9"><ChatList/></div>
@@ -36,4 +36,8 @@ background-color: black;
 font-family: sans-serif;
 padding-top: 50px;
 color: white;
+`;
+
+const Title = styled.h1`
+text-align: center;
 `;
