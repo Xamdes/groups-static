@@ -5,18 +5,37 @@
 * <MessageForm/>
 */
 import styled from 'styled-components';
+import { v4 } from 'uuid';
 // import PropTypes from 'prop-types';
 // import { Link, Switch, Route } from 'react-router-dom';
 
 function MessageForm(){
+
+  function handleSubmitMessage()
+  {
+    console.log('Test Message Submit');
+  }
+
+  let _message;
+  _message = null;
+  function handleNewMessageFormSubmission(event)
+  {
+    event.preventDefault();
+    // props.onNewMessageCreation({message: _message.value, , id: v4()});
+    console.log(_message);
+    _message.value = '';
+  }
+
   return (
     <Main>
       <div className='row'>
-        <div classname='col-md-9'>
-          <textarea placeholder='Message Box' cols='100'></textarea>
-        </div>
-        <div classname='col-md-3'>
-          <button className='btn btn-submit'>Submit</button>
+        <textarea placeholder='Message Box'
+          className="col-md-9"
+          id='issue'
+          placeholder='New Message'
+          ref={(textarea) => {_message = textarea;}}/>
+        <div className='col-md-3'>
+          <button className='btn btn-submit' onClick={handleNewMessageFormSubmission}>Submit</button>
         </div>
       </div>
     </Main>
