@@ -23,16 +23,16 @@ function MessageForm(){
 
   return (
     <Main>
-      <div className='row'>
+      <form className="row" onSubmit={handleNewMessageFormSubmission}>
         <textarea placeholder='Message Box'
           className="col-md-9"
           id='issue'
           placeholder='New Message'
           ref={(textarea) => {_message = textarea;}}/>
         <div className='col-md-3'>
-          <button className='btn btn-submit' onClick={handleNewMessageFormSubmission}>Submit</button>
+          <button className='btn btn-submit' type="submit">Submit</button>
         </div>
-      </div>
+      </form>
     </Main>
   );
 }

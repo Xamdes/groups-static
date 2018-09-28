@@ -16,7 +16,7 @@ function Chat(props){
   return (
     <Main>
       {props.messageList.map((message,i) =>
-        <Message message={message}
+        <Message message={message.message}
           key={i}/>
       )}
       <MessageForm/>

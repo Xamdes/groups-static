@@ -37,5 +37,8 @@ font-family: sans-serif;
 color: white;
 `;
 
-const chatOne = ['Hi','Yay','Test One'];
-const chatTwo = ['Hi','Yay','Test Two'];
+
+
+
+const chatOne = [{message:'Hi'},{message:'Yay'},{message:'Test One'}];
+const chatTwo = [{message:'Hi'},{message:'Yay'},{message:'Test Two'}];
