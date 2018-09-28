@@ -19,6 +19,14 @@ function Chat(props){
         <Message message={message}
           key={i}/>
       )}
+      <div className='row'>
+        <div classname='col-md-9'>
+          <textarea placeholder='Message Box' cols='100'></textarea>
+        </div>
+        <div classname='col-md-3'>
+          <button className='btn btn-submit'>Submit</button>
+        </div>
+      </div>
     </Main>
   );
 
