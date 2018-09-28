@@ -10,19 +10,27 @@ import styled from 'styled-components';
 
 //Contains current dicusion for selected group
 
-function Chat(){
+
+
+function Chat(props){
+
   return (
     <Main>
-      <h1>Chat Component Created Successfully</h1>
+      {props.messageList.map((message) =>
+        <Message message={message}
+          key={i}/>
+      )}
     </Main>
   );
+
+
 }
 
-/*
+
 Chat.propTypes = {
-  //  [variable-name]: PropTypes.[type],
+  messages: PropTypes.array,
 };
-*/
+
 
 export default Chat;
 

@@ -15,8 +15,8 @@ function ChatList(){
   return (
     <Main>
       <h1>Current Discussions</h1>
-      <Chat/>
-      <Chat/>
+      <Chat messageList={chatOne}/>
+      <Chat messageList={chatTwo}/>
     </Main>
   );
 }
@@ -35,3 +35,6 @@ font-family: sans-serif;
 padding-top: 50px;
 color: white;
 `;
+
+const chatOne = ['Hi','Yay','Test One'];
+const chatTwo = ['Hi','Yay','Test Two'];
