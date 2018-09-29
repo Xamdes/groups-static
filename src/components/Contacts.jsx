@@ -29,4 +29,4 @@ color: white;
 `;
 
 
-const masterContactList = [{ firstname:'Kevin',lastName: 'Jenkins', id:'0' },{ firstname:'Jane',lastName: 'Jenkins', id:'1' },{ firstname:'Karl',lastName: 'Lewin', id:'2' }];
+const masterContactList = [{ firstName:'Kevin',lastName: 'Jenkins', id:'0' },{ firstName:'Jane',lastName: 'Jenkins', id:'1' },{ firstName:'Karl',lastName: 'Lewin', id:'2' }];

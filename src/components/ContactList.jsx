@@ -11,7 +11,7 @@ function ContactList(props){
   return (
     <Main>
       {props.contactList.map((contact) =>
-        <Contact firstname={contact.firstname}
+        <Contact firstName={contact.firstName}
           lastName={contact.lastName}
           id={contact.id}
           key={contact.id}/>

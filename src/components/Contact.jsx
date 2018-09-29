@@ -9,7 +9,7 @@ import styled from 'styled-components';
 function Contact(props){
   return (
     <Main>
-      <Name>{props.firstname} {props.lastName}</Name>
+      <Name>{props.firstName} {props.lastName}</Name>
     </Main>
   );
 }
@@ -17,7 +17,7 @@ function Contact(props){
 
 Contact.propTypes = {
   firstName: PropTypes.string,
-  lastname: PropTypes.string,
+  lastName: PropTypes.string,
   id: PropTypes.string,
 };
 
