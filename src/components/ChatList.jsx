@@ -6,8 +6,6 @@
 */
 import styled from 'styled-components';
 import Chat from './Chat';
-// import PropTypes from 'prop-types';
-// import { Link, Switch, Route } from 'react-router-dom';
 
 //List chats by chat names pass name and uuid
 
@@ -23,12 +21,6 @@ function ChatList(){
   );
 }
 
-/*
-ChatList.propTypes = {
-  //  [variable-name]: PropTypes.[type],
-};
-*/
-
 export default ChatList;
 
 const Main = styled.div`
@@ -36,9 +28,6 @@ background-color: black;
 font-family: sans-serif;
 color: white;
 `;
-
-
-
 
 const chatOne = [{message:'Hi'},{message:'Yay'},{message:'Test One'}];
 const chatTwo = [{message:'Hi'},{message:'Yay'},{message:'Test Two'}];

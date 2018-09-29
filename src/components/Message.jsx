@@ -5,8 +5,6 @@
 * <Message/>
 */
 import styled from 'styled-components';
-// import PropTypes from 'prop-types';
-// import { Link, Switch, Route } from 'react-router-dom';
 
 function Message(props){
   return (
@@ -16,11 +14,9 @@ function Message(props){
   );
 }
 
-
 Message.propTypes = {
   message: PropTypes.string,
 };
-
 
 export default Message;
 

@@ -7,7 +7,6 @@
 import styled from 'styled-components';
 import ChatList from './ChatList';
 import Group from './Group';
-// import { Link, Switch, Route } from 'react-router-dom';
 
 //Right side should contain list of groups to select from
 //Details Groups name and a Public/Private descriptdor
@@ -30,12 +29,6 @@ function Groups(){
     </Main>
   );
 }
-
-/*
-Groups.propTypes = {
-  //  [variable-name]: PropTypes.[type],
-};
-*/
 
 export default Groups;
 

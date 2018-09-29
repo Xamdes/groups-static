@@ -6,8 +6,6 @@
 */
 import styled from 'styled-components';
 // import { v4 } from 'uuid';
-// import PropTypes from 'prop-types';
-// import { Link, Switch, Route } from 'react-router-dom';
 
 function MessageForm(){
 

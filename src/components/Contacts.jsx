@@ -6,8 +6,6 @@ import ContactList from './ContactList';
 * <Contacts/>
 */
 import styled from 'styled-components';
-// import PropTypes from 'prop-types';
-// import { Link, Switch, Route } from 'react-router-dom';
 
 function Contacts(){
   return (
@@ -21,12 +19,6 @@ function Contacts(){
     </Main>
   );
 }
-
-/*
-Contacts.propTypes = {
-  //  [variable-name]: PropTypes.[type],
-};
-*/
 
 export default Contacts;
 

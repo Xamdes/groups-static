@@ -5,7 +5,6 @@
 * <Contact/>
 */
 import styled from 'styled-components';
-// import { Link, Switch, Route } from 'react-router-dom';
 
 function Contact(props){
   return (
@@ -15,11 +14,13 @@ function Contact(props){
   );
 }
 
-/*
+
 Contact.propTypes = {
-  //  [variable-name]: PropTypes.[type],
+  firstName: PropTypes.string,
+  lastname: PropTypes.string,
+  id: PropTypes.string,
 };
-*/
+
 
 export default Contact;
 

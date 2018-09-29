@@ -6,7 +6,6 @@ import Contact from './Contact';
 * <contactList/>
 */
 import styled from 'styled-components';
-// import { Link, Switch, Route } from 'react-router-dom';
 
 function ContactList(props){
   return (

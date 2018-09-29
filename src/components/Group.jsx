@@ -5,9 +5,6 @@
 * <Group/>
 */
 import styled from 'styled-components';
-// import PropTypes from 'prop-types';
-// import { Link, Switch, Route } from 'react-router-dom';
-
 
 function Group(props){
 
@@ -25,12 +22,10 @@ function Group(props){
   );
 }
 
-
 Group.propTypes = {
   groupName: PropTypes.string,
   id: PropTypes.string,
 };
-
 
 export default Group;
 

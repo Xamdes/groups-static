@@ -45,12 +45,6 @@ class App extends React.Component{
   }
 }
 
-/*
-App.propTypes = {
-  //  [variable-name]: PropTypes.[type],
-};
-*/
-
 export default App;
 
 const Main = styled.div`

@@ -7,7 +7,6 @@
 import styled from 'styled-components';
 import Message from './Message';
 import MessageForm from './MessageForm';
-// import { Link, Switch, Route } from 'react-router-dom';
 
 //Contains current dicusion for selected group
 
